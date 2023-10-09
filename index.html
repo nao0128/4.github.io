@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 </head>
-
 <body>
 <header> 
   <!--------ナビゲーション-------->
@@ -33,13 +33,15 @@
     <div class="logo-1 flex"> <img src="img/logo.png"> <img src="img/logo-2.png"> </div>
     <div class="score">
       <article> </article>
-      <h1>
+      <h1 class='js-fade-aniimation'>
+		  
         <ruby>
         64&nbsp;
         <rt>
         <span>横浜タートルズ</span>
         </tr>
         </ruby>
+		  
         ‐
         <ruby>
         &nbsp;51
@@ -59,7 +61,7 @@
     <!--<article><a href="#"><p  class="button_1 bold">MORE</p></a> </article>-->
 	</section>
   <!--------ランキング----------->
-  <section class="top-section-2">
+  <section class="top-section-2" style="margin-top: -300px;">
     <h2><span>2023</span><br>
       SEASON RANKING</h2>
     <table>
@@ -67,9 +69,9 @@
         <th>1</th>
         <td>TOKYO RABITS</td>
       </tr>
-      <tr>
+      <tr class='js-fade-aniimation'>
         <th class="tartols-rank">2</th>
-        <td class="tartols-rank">YOKOHAMA TARTOLS</td>
+        <td  class="tartols-rank">YOKOHAMA TARTOLS</td>
       </tr>
       <tr>
         <th>3</th>
@@ -82,14 +84,14 @@
   <section class="top-section-3">
     <h2>NEWS</h2>
     <div class="news_pickup flex">
-      <div class="news_pickup_topix"> <img src="img/banner-1.png"> <span class="ravel_1">PICK<br>
+		<div class="news_pickup_topix"><p class="image"><a href="#"> <img src="img/banner-1.png"></a> <span class="ravel_1">PICK<br>
         UP</span> <a href="">
         <p>
           <time>2023.6.25</time>
           <br>
           記念グッズについてのお知らせ</p>
         </a></div>
-      <div class="news_pickup_topix"> <img src="img/banner-2.jpg"> <span class="ravel_2">PICK<br>
+      <div class="news_pickup_topix"> <p class="image"><a href="#"><img src="img/banner-2.jpg"></a></p> <span class="ravel_2">PICK<br>
         UP</span> <a href="">
         <p>
           <time>2023.6.19</time>
@@ -135,9 +137,10 @@
     <li><a href="">プライバシーポリシー</a></li>
   </ul>
   <small>&copy;YOKOHAMA TARTOLS.ALL RIGHT RESERVED.</small> </footer>
-<!--------TOPにもどるボタンー-----------> 
-<a href="#" class="back-to-top js-to-top">TOP</a> 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
-<script src="js/main.js"></script>
+<!--------TOPにもどるボタンー------------> 
+<a href="#" class="back-to-top js-to-top">TOP</a>
+<!------------------------------------>	
+<script src="js/main_2.js"></script>
+<script src="js/main.js"></script>	
 </body>
 </html>

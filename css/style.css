@@ -56,16 +56,17 @@ nav a, .top-section-1 h2, .logo-1 p, .score h1 {
 /*------------グローバルナビゲーション------------*/
 nav ul {
   width: 100%;
-  height: auto;
+  height: 120px;
   background: var(--black);
   justify-content: center;
   position: relative;
   position: fixed;
-  top: 30px;
+  top: 0px;
   z-index: 5
 }
 nav li {
-  padding: 30px 60px;
+  padding: 0 60px;
+	margin-top: 40px;
 }
 .logo {
   position: absolute;
@@ -253,15 +254,21 @@ height: auto;
   font-size: 32px;
   padding: 5px;
 }
+
+
 /*-------ランキングranking---------*/
 .top-section-2 {
   position: relative;
   z-index: -5;
   padding: 300px 0 300px;
   0;
-  margin: -300px;
+  margin-top: -300px;
+	margin: 0 auto;
+	width: 100%;
+
 }
 .top-section-2::after {
+	content: '';
   width: 100%;
   height: 100%;
   content: "";
@@ -304,6 +311,8 @@ height: auto;
   color: var(--blue);
 }
 
+
+
 /*-------ニュースNEWS---------*/
 
 .top-section-3 {
@@ -317,6 +326,7 @@ height: auto;
 }
 .top-section-3 article {
   text-align: center;
+	margin: 50px 0;
 }
 .top-section-3 h2 {
   padding-top: 150px;
@@ -333,19 +343,24 @@ height: auto;
 }
 .news_pickup_topix {
   display: block;
-  margin: 10px;
-  width: 45%;
+  margin: 50px 10px 50px 10px; 
+  width: 450px;
+	height: auto;
   background: var(--white);
   position: relative;
 }
 .news_pickup_topix img {
-  width: 100%;
   height: auto;
 }
 .news_pickup_topix a {
   display: block;
   padding: 10px;
 }
+
+.image a{
+	padding: 0;
+}
+
 .news_pickup_topix span {
   position: absolute;
   background: red;
@@ -372,9 +387,25 @@ height: auto;
 .top-section-3 ul li a {
   color: var(--blue);
 }
+
+.image a{
+	display: block;
+	width: 450px;
+}
+
+.image a:hover{
+	overflow: hidden;
+}
+
+.image a img:hover{
+	transform: scale(1.1);
+	transition: 0.3s ease-in-out;
+}
+
 /*-----------SNS--------------*/
 .top-section-4 {
   width: 100%;
+	margin: 50px 0;
 }
 .sns {
   justify-content: center;
@@ -416,7 +447,7 @@ footer small {
   bottom: 5%;
   color: #fff;
   padding: 2rem;
-  border-radius: 50%;
+  
   display: inline-block;
   text-decoration: none;
 }
@@ -429,8 +460,23 @@ footer small {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-color: #333;
-  border-radius: 50%;
+  background-color: #000;
+  border: solid #fff 2px;
   z-index: -1;
+	border-radius: 50%;
 }
+
+/*--------スライドイン-----------*/
+
+.js-fade-aniimation{
+	opacity: 0;
+	transform: translateX(50%);
+	transition: all 0.5s;
+}
+
+.js-fade-aniimation.is_show{
+	transform: translateX(0);
+	opacity: 1;
+}
+
 
